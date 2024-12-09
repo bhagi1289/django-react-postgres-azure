@@ -83,10 +83,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'test',
-        'USER': 'postgres',
-        'PASSWORD': 'P@ssw0rd',
-        'HOST': 'bhagyaraju.postgres.database.azure.com',
-        'PORT': '5432' 
+        'USER': 'mpdyhfvtxv',
+        'PASSWORD': '$pAki3cLK1Ecneac',
+        'HOST': 'bhagya-django-backend-app-server.postgres.database.azure.com',
+        'PORT': '5432',
+        'database': 'postgres'
     }
 
     # 'default': {
