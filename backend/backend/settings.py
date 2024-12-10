@@ -45,12 +45,12 @@ INSTALLED_APPS = [
 CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -85,9 +85,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'test',
-        'USER': 'mpdyhfvtxv',
-        'PASSWORD': '$pAki3cLK1Ecneac',
-        'HOST': 'bhagya-django-backend-app-server.postgres.database.azure.com',
+        'USER': 'postgres',
+        'PASSWORD': 'P@ssw0rd',
+        'HOST': 'localhost',
         'PORT': '5432',
         'database': 'postgres'
     }
